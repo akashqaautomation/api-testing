@@ -1,0 +1,1392 @@
+<html>
+<head>
+<title>TestNG:  front office</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>front office</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/60/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 10 13:12:30 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>1212 seconds (1212773 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.GenerateScheduleTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.GenerateScheduleTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome=90.0.4430.93)
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;DESKTOP-U1OL4JI&apos;, ip: &apos;10.81.234.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Nishant\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50836}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d6f1dfe880d9a19291c962c7249eccc6
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:324)
+	at com.triotree.driver.website.TTWebsiteDriver.getURL(TTWebsiteDriver.java:153)
+	at com.triotree.test.website.TTWebsiteBaseTest.setUp(TTWebsiteBaseTest.java:65)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace705265015", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace705265015'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome=90.0.4430.93)
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;DESKTOP-U1OL4JI&apos;, ip: &apos;10.81.234.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Nishant\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50836}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d6f1dfe880d9a19291c962c7249eccc6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:324)
+	at com.triotree.driver.website.TTWebsiteDriver.getURL(TTWebsiteDriver.java:153)
+	at com.triotree.test.website.TTWebsiteBaseTest.setUp(TTWebsiteBaseTest.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.GenerateScheduleTest@21680803</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.FrontOfficeBillingTest.beforeclass()'><b>beforeclass</b><br>Test class: com.triotree.test.website.FrontOffice.FrontOfficeBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.FrontOfficeBillingTest@329a1243</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DocumentUploadTest.beforeclass()'><b>beforeclass</b><br>Test class: com.triotree.test.website.FrontOffice.DocumentUploadTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DocumentUploadTest@3e2fc448</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest.beforeclass()'><b>beforeclass</b><br>Test class: com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest@c8b96ec</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.FrontOfficeBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.FrontOfficeBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.FrontOfficeBillingTest@329a1243</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DocumentUploadTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.DocumentUploadTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DocumentUploadTest@3e2fc448</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest@c8b96ec</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.MergeDuplicateTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.MergeDuplicateTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.MergeDuplicateTest@4cc61eb1</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.PatientRegistrationTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.PatientRegistrationTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.PatientRegistrationTest@1b39fd82</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.GenerateScheduleTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.GenerateScheduleTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.GenerateScheduleTest@21680803</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.FrontOfficeBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.FrontOfficeBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.FrontOfficeBillingTest@329a1243</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest@c8b96ec</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.PatientRegistrationTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.PatientRegistrationTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.PatientRegistrationTest@1b39fd82</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.GenerateScheduleTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.GenerateScheduleTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.GenerateScheduleTest@21680803</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.FrontOfficeBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.FrontOfficeBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.FrontOfficeBillingTest@329a1243</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest@c8b96ec</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.PatientRegistrationTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.PatientRegistrationTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.PatientRegistrationTest@1b39fd82</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.GenerateScheduleTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.GenerateScheduleTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.GenerateScheduleTest@21680803</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.FrontOfficeBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.FrontOfficeBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.FrontOfficeBillingTest@329a1243</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest@c8b96ec</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.PatientRegistrationTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.PatientRegistrationTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.PatientRegistrationTest@1b39fd82</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.GenerateScheduleTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.GenerateScheduleTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.GenerateScheduleTest@21680803</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.FrontOfficeBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.FrontOfficeBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.FrontOfficeBillingTest@329a1243</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.PatientRegistrationTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.PatientRegistrationTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.PatientRegistrationTest@1b39fd82</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.GenerateScheduleTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.GenerateScheduleTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.GenerateScheduleTest@21680803</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.FrontOfficeBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.FrontOfficeBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.FrontOfficeBillingTest@329a1243</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.PatientRegistrationTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.PatientRegistrationTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.PatientRegistrationTest@1b39fd82</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.GenerateScheduleTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.GenerateScheduleTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.GenerateScheduleTest@21680803</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.FrontOfficeBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.FrontOfficeBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.FrontOfficeBillingTest@329a1243</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.PatientRegistrationTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.PatientRegistrationTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.PatientRegistrationTest@1b39fd82</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.GenerateScheduleTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.GenerateScheduleTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.GenerateScheduleTest@21680803</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.FrontOfficeBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.FrontOfficeBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.FrontOfficeBillingTest@329a1243</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.PatientRegistrationTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.PatientRegistrationTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.PatientRegistrationTest@1b39fd82</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.FrontOfficeBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.FrontOfficeBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.FrontOfficeBillingTest@329a1243</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.PatientRegistrationTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.PatientRegistrationTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.PatientRegistrationTest@1b39fd82</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.FrontOfficeBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.FrontOfficeBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.FrontOfficeBillingTest@329a1243</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.PatientRegistrationTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.PatientRegistrationTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.PatientRegistrationTest@1b39fd82</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.FrontOfficeBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.FrontOfficeBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.FrontOfficeBillingTest@329a1243</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.FrontOfficeBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.FrontOfficeBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.FrontOfficeBillingTest@329a1243</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.frontOfficeBillUtilitySearchPatientbyDateRangeAndRefundTheBillTest()'><b>frontOfficeBillUtilitySearchPatientbyDateRangeAndRefundTheBillTest</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1386429503", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1386429503'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.frontOfficeBillUtilityShowIpEmBillDetailsTest()'><b>frontOfficeBillUtilityShowIpEmBillDetailsTest</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace430050226", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace430050226'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.FrontOfficeBillingTest.frontOfficeBillingMarkPatientDeceasedTestCase()'><b>frontOfficeBillingMarkPatientDeceasedTestCase</b><br>Test class: com.triotree.test.website.FrontOffice.FrontOfficeBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace247334525", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace247334525'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.FrontOfficeBillingTest@329a1243</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.FrontOfficeBillingTest.frontOfficeBillingMergeDuplicatesTestCase()'><b>frontOfficeBillingMergeDuplicatesTestCase</b><br>Test class: com.triotree.test.website.FrontOffice.FrontOfficeBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace802573073", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace802573073'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.FrontOfficeBillingTest@329a1243</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.FrontOfficeBillingTest.frontOfficeBillingNewPaymentModeTestCase()'><b>frontOfficeBillingNewPaymentModeTestCase</b><br>Test class: com.triotree.test.website.FrontOffice.FrontOfficeBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace546242567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace546242567'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.FrontOfficeBillingTest@329a1243</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.FrontOfficeBillingTest.frontOfficeBillingPercentageProcessDiscountTestCase()'><b>frontOfficeBillingPercentageProcessDiscountTestCase</b><br>Test class: com.triotree.test.website.FrontOffice.FrontOfficeBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1917860633", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1917860633'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.FrontOfficeBillingTest@329a1243</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.FrontOfficeBillingTest.frontOfficeBillingProcessPaymentTestCase()'><b>frontOfficeBillingProcessPaymentTestCase</b><br>Test class: com.triotree.test.website.FrontOffice.FrontOfficeBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1780313842", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1780313842'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.FrontOfficeBillingTest@329a1243</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.frontOfficeBillingUtilityFindAllBillForOnePatientTest()'><b>frontOfficeBillingUtilityFindAllBillForOnePatientTest</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace180084736", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace180084736'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.frontOfficeBillingUtilityWithCreditPartialCoPayPatientRefundWithDueSettlementTest()'><b>frontOfficeBillingUtilityWithCreditPartialCoPayPatientRefundWithDueSettlementTest</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace190702991", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace190702991'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.frontOfficeBillingWithBillingModeCashPatientTest()'><b>frontOfficeBillingWithBillingModeCashPatientTest</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1753885705", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1753885705'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.frontOfficeBillingWithBillingModeCreditPatientTest()'><b>frontOfficeBillingWithBillingModeCreditPatientTest</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1864074564", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1864074564'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.FrontOfficeBillingTest.frontOfficeBillingandselectSecondPaymentModeAsChequeTestCase()'><b>frontOfficeBillingandselectSecondPaymentModeAsChequeTestCase</b><br>Test class: com.triotree.test.website.FrontOffice.FrontOfficeBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace2107088180", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2107088180'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.FrontOfficeBillingTest@329a1243</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.FrontOfficeBillingTest.frontOfficeBillingclickOnAddToBillButtonTestCase()'><b>frontOfficeBillingclickOnAddToBillButtonTestCase</b><br>Test class: com.triotree.test.website.FrontOffice.FrontOfficeBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1338332733", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1338332733'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.FrontOfficeBillingTest@329a1243</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.FrontOfficeBillingTest.frontOfficeBillingclickOnNoButtonOnBillGotGeneratedPopupTestCase()'><b>frontOfficeBillingclickOnNoButtonOnBillGotGeneratedPopupTestCase</b><br>Test class: com.triotree.test.website.FrontOffice.FrontOfficeBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace884502914", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace884502914'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.FrontOfficeBillingTest@329a1243</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.FrontOfficeBillingTest.frontOfficeBillingenterChequeDetailsAndSaveDetailsTestCase()'><b>frontOfficeBillingenterChequeDetailsAndSaveDetailsTestCase</b><br>Test class: com.triotree.test.website.FrontOffice.FrontOfficeBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:71)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1657920572", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1657920572'><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:71)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1887)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:778)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.FrontOfficeBillingTest@329a1243</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.FrontOfficeBillingTest.frontOfficeBillingsearchPatientWithMobileNumberTestCase()'><b>frontOfficeBillingsearchPatientWithMobileNumberTestCase</b><br>Test class: com.triotree.test.website.FrontOffice.FrontOfficeBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1013728905", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1013728905'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.FrontOfficeBillingTest@329a1243</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.FrontOfficeBillingTest.frontOfficeBillingselectInsuranceCompTestCase()'><b>frontOfficeBillingselectInsuranceCompTestCase</b><br>Test class: com.triotree.test.website.FrontOffice.FrontOfficeBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1995042827", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1995042827'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.FrontOfficeBillingTest@329a1243</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.FrontOfficeBillingTest.frontOfficeBillingverifyPrintOPDMessageIsDisplayingTestCase()'><b>frontOfficeBillingverifyPrintOPDMessageIsDisplayingTestCase</b><br>Test class: com.triotree.test.website.FrontOffice.FrontOfficeBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1810790719", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1810790719'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.FrontOfficeBillingTest@329a1243</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest.frontOfficeCancellationOfAllAppointmentOnMarkPatientDeceased()'><b>frontOfficeCancellationOfAllAppointmentOnMarkPatientDeceased</b><br>Test class: com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace658563862", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace658563862'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest@c8b96ec</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.PatientRegistrationTest.frontOfficeCaptureModificationRemarksChangingDemographicDetailsTest()'><b>frontOfficeCaptureModificationRemarksChangingDemographicDetailsTest</b><br>Test class: com.triotree.test.website.FrontOffice.PatientRegistrationTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace99219259", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace99219259'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.PatientRegistrationTest@1b39fd82</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.PatientRegistrationTest.frontOfficeCapturePurposeOfVisitOnRegistrationTest()'><b>frontOfficeCapturePurposeOfVisitOnRegistrationTest</b><br>Test class: com.triotree.test.website.FrontOffice.PatientRegistrationTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1426974392", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1426974392'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.PatientRegistrationTest@1b39fd82</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.frontOfficeCreditPatientBillingWithAvaialDiscountAndWithoutCoPayTest()'><b>frontOfficeCreditPatientBillingWithAvaialDiscountAndWithoutCoPayTest</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:71)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1837602497", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1837602497'><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:71)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1887)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:778)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.PatientRegistrationTest.frontOfficeDOBSearchFieldInAllScreenTest()'><b>frontOfficeDOBSearchFieldInAllScreenTest</b><br>Test class: com.triotree.test.website.FrontOffice.PatientRegistrationTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1087519874", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1087519874'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.PatientRegistrationTest@1b39fd82</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.frontOfficeDepositAndRefundTest()'><b>frontOfficeDepositAndRefundTest</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace2010883277", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2010883277'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.frontOfficeDepositBySearchPatientTest()'><b>frontOfficeDepositBySearchPatientTest</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1788662008", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1788662008'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.GenerateScheduleTest.frontOfficeDepositBySearchPatientTestSchedule()'><b>frontOfficeDepositBySearchPatientTestSchedule</b><br>Test class: com.triotree.test.website.FrontOffice.GenerateScheduleTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:71)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1345648093", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1345648093'><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:71)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1887)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:778)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>47</td>
+<td>com.triotree.test.website.FrontOffice.GenerateScheduleTest@21680803</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.frontOfficeDepositBySearchPatientTestSchedule()'><b>frontOfficeDepositBySearchPatientTestSchedule</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace748229733", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace748229733'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.frontOfficeDepositTest()'><b>frontOfficeDepositTest</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1051927339", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1051927339'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.frontOfficeDepositamountandwithoutcopayTest()'><b>frontOfficeDepositamountandwithoutcopayTest</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace786970485", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace786970485'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.frontOfficeDoctorScheduleWithGenerateScheduleAndLinkToExistingUHIDTest()'><b>frontOfficeDoctorScheduleWithGenerateScheduleAndLinkToExistingUHIDTest</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace166710672", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace166710672'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.frontOfficeDoctorScheduleWithGenerateScheduleAndRegisterPatientTest()'><b>frontOfficeDoctorScheduleWithGenerateScheduleAndRegisterPatientTest</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace912054991", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace912054991'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.GenerateScheduleTest.frontOfficeDoctorSchedulingCancelAppointmentTest()'><b>frontOfficeDoctorSchedulingCancelAppointmentTest</b><br>Test class: com.triotree.test.website.FrontOffice.GenerateScheduleTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1120671806", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1120671806'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.GenerateScheduleTest@21680803</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.frontOfficeDoctorSchedulingCancelAppointmentTest()'><b>frontOfficeDoctorSchedulingCancelAppointmentTest</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1806547472", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1806547472'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.GenerateScheduleTest.frontOfficeDoctorSchedulingWithAddPatientTest()'><b>frontOfficeDoctorSchedulingWithAddPatientTest</b><br>Test class: com.triotree.test.website.FrontOffice.GenerateScheduleTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace915540950", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace915540950'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.GenerateScheduleTest@21680803</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.frontOfficeDoctorSchedulingWithAddPatientTest()'><b>frontOfficeDoctorSchedulingWithAddPatientTest</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1498259207", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1498259207'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.GenerateScheduleTest.frontOfficeDoctorSchedulingWithLinkUHIDTest()'><b>frontOfficeDoctorSchedulingWithLinkUHIDTest</b><br>Test class: com.triotree.test.website.FrontOffice.GenerateScheduleTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1162400340", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1162400340'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.GenerateScheduleTest@21680803</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.frontOfficeDoctorSchedulingWithLinkUHIDTest()'><b>frontOfficeDoctorSchedulingWithLinkUHIDTest</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1137945509", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1137945509'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.PatientRegistrationTest.frontOfficeDocumentUploadTest()'><b>frontOfficeDocumentUploadTest</b><br>Test class: com.triotree.test.website.FrontOffice.PatientRegistrationTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace785340693", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace785340693'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.PatientRegistrationTest@1b39fd82</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.GenerateScheduleTest.frontOfficeGenerateSchedule2Test()'><b>frontOfficeGenerateSchedule2Test</b><br>Test class: com.triotree.test.website.FrontOffice.GenerateScheduleTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace504355631", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace504355631'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.GenerateScheduleTest@21680803</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.GenerateScheduleTest.frontOfficeGenerateSchedule3Test()'><b>frontOfficeGenerateSchedule3Test</b><br>Test class: com.triotree.test.website.FrontOffice.GenerateScheduleTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace307036850", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace307036850'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.GenerateScheduleTest@21680803</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.GenerateScheduleTest.frontOfficeGenerateScheduleTest()'><b>frontOfficeGenerateScheduleTest</b><br>Test class: com.triotree.test.website.FrontOffice.GenerateScheduleTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace740950652", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace740950652'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.GenerateScheduleTest@21680803</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.frontOfficeGenerateScheduleTest()'><b>frontOfficeGenerateScheduleTest</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace543028700", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace543028700'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.frontOfficeGenerateScheduleandwithGenerateschedule()'><b>frontOfficeGenerateScheduleandwithGenerateschedule</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1135936028", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1135936028'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.frontOfficeGenerateScheduleselectolderdateandRemarksaddedTest()'><b>frontOfficeGenerateScheduleselectolderdateandRemarksaddedTest</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace969502280", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace969502280'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.MergeDuplicateTest.frontOfficeMergeDuplicateWithDepositOnPatientTest()'><b>frontOfficeMergeDuplicateWithDepositOnPatientTest</b><br>Test class: com.triotree.test.website.FrontOffice.MergeDuplicateTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:71)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace67985650", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace67985650'><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:71)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1887)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:778)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.MergeDuplicateTest@4cc61eb1</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.PatientRegistrationTest.frontOfficeRegistrationWithKinDetailsTest()'><b>frontOfficeRegistrationWithKinDetailsTest</b><br>Test class: com.triotree.test.website.FrontOffice.PatientRegistrationTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace814300680", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace814300680'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.PatientRegistrationTest@1b39fd82</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.frontOfficeSchedulingDoctorScheduleandLegendForAppointmentFormTest()'><b>frontOfficeSchedulingDoctorScheduleandLegendForAppointmentFormTest</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1725885575", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1725885575'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.GenerateScheduleTest.frontOfficeSchedulingTest()'><b>frontOfficeSchedulingTest</b><br>Test class: com.triotree.test.website.FrontOffice.GenerateScheduleTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:71)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace999211009", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace999211009'><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:71)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1887)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:778)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.GenerateScheduleTest@21680803</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.PatientRegistrationTest.frontOfficeSearchPatientTest()'><b>frontOfficeSearchPatientTest</b><br>Test class: com.triotree.test.website.FrontOffice.PatientRegistrationTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace2078470810", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2078470810'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.PatientRegistrationTest@1b39fd82</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.frontOfficeToAddDOBMobileNoAddressGaurdianNameTest()'><b>frontOfficeToAddDOBMobileNoAddressGaurdianNameTest</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1536465406", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1536465406'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DepositBillingTest.frontOfficeWithAvailDepositAmountTest()'><b>frontOfficeWithAvailDepositAmountTest</b><br>Test class: com.triotree.test.website.FrontOffice.DepositBillingTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Cardiology Services
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;DESKTOP-U1OL4JI&apos;, ip: &apos;10.81.234.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+	at com.triotree.website.pages.FrontOffice.BillingPage.selectServiceNameFromDropdown(BillingPage.java:393)
+	at com.triotree.test.website.FrontOffice.DepositBillingTest.frontOfficeWithAvailDepositAmountTest(DepositBillingTest.java:204)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1349129074", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1349129074'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Cardiology Services
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;DESKTOP-U1OL4JI&apos;, ip: &apos;10.81.234.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+	at com.triotree.website.pages.FrontOffice.BillingPage.selectServiceNameFromDropdown(BillingPage.java:393)
+	at com.triotree.test.website.FrontOffice.DepositBillingTest.frontOfficeWithAvailDepositAmountTest(DepositBillingTest.java:204)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>411</td>
+<td>com.triotree.test.website.FrontOffice.DepositBillingTest@588ab592</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest.markPatientDeceasedSearchPatientTest()'><b>markPatientDeceasedSearchPatientTest</b><br>Test class: com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace823263265", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace823263265'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest@c8b96ec</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest.markPatientDeceasedTest()'><b>markPatientDeceasedTest</b><br>Test class: com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:71)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace277149580", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace277149580'><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:71)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1887)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:778)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest@c8b96ec</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.MergeDuplicateTest.mergeAndUnmergePatientDuplicateTest()'><b>mergeAndUnmergePatientDuplicateTest</b><br>Test class: com.triotree.test.website.FrontOffice.MergeDuplicateTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@id=&apos;FOAddPatientMenu&apos;]//i[2]&quot;}
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;DESKTOP-U1OL4JI&apos;, ip: &apos;10.81.234.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Nishant\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: feff4b71288b1e2d08ad9fcc4dd59003
+*** Element info: {Using=xpath, value=//li[@id=&apos;FOAddPatientMenu&apos;]//i[2]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.triotree.driver.website.TTWebsiteDriver.findElement(TTWebsiteDriver.java:517)
+	at com.triotree.website.pages.FrontOffice.FrontOfficeHomePage.clickOnAddPatientAndSelectAnOption(FrontOfficeHomePage.java:50)
+	at com.triotree.test.website.FrontOffice.MergeDuplicateTest.mergeAndUnmergePatientDuplicateTest(MergeDuplicateTest.java:46)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1195909598", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1195909598'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@id=&apos;FOAddPatientMenu&apos;]//i[2]&quot;}
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;DESKTOP-U1OL4JI&apos;, ip: &apos;10.81.234.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Nishant\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: feff4b71288b1e2d08ad9fcc4dd59003
+*** Element info: {Using=xpath, value=//li[@id=&apos;FOAddPatientMenu&apos;]//i[2]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.triotree.driver.website.TTWebsiteDriver.findElement(TTWebsiteDriver.java:517)
+	at com.triotree.website.pages.FrontOffice.FrontOfficeHomePage.clickOnAddPatientAndSelectAnOption(FrontOfficeHomePage.java:50)
+	at com.triotree.test.website.FrontOffice.MergeDuplicateTest.mergeAndUnmergePatientDuplicateTest(MergeDuplicateTest.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>41</td>
+<td>com.triotree.test.website.FrontOffice.MergeDuplicateTest@4cc61eb1</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.PatientRegistrationTest.patientRegistrationAliasName()'><b>patientRegistrationAliasName</b><br>Test class: com.triotree.test.website.FrontOffice.PatientRegistrationTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:71)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace742473724", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace742473724'><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:71)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1887)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:778)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.PatientRegistrationTest@1b39fd82</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.PatientRegistrationTest.patientRegistrationSimilarSoundingClosePopupTest()'><b>patientRegistrationSimilarSoundingClosePopupTest</b><br>Test class: com.triotree.test.website.FrontOffice.PatientRegistrationTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace623224248", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace623224248'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.PatientRegistrationTest@1b39fd82</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.PatientRegistrationTest.patientRegistrationSimilarSoundingSelectPreviousPatientTest()'><b>patientRegistrationSimilarSoundingSelectPreviousPatientTest</b><br>Test class: com.triotree.test.website.FrontOffice.PatientRegistrationTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace2140617236", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2140617236'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.PatientRegistrationTest@1b39fd82</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.DocumentUploadTest.patientRegistrationValidDataTest()'><b>patientRegistrationValidDataTest</b><br>Test class: com.triotree.test.website.FrontOffice.DocumentUploadTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:71)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2133668271", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2133668271'><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:71)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1887)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:778)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.DocumentUploadTest@3e2fc448</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.PatientRegistrationTest.registrationFormInFrontOfficeWithKinDetailsTest()'><b>registrationFormInFrontOfficeWithKinDetailsTest</b><br>Test class: com.triotree.test.website.FrontOffice.PatientRegistrationTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1808547623", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1808547623'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.PatientRegistrationTest@1b39fd82</td></tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest.revokeDeceasedPatientTest()'><b>revokeDeceasedPatientTest</b><br>Test class: com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1238047663", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1238047663'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.test.website.FrontOffice.MarkPatientDeceasedTest@c8b96ec</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.triotree.test.website.FrontOffice.PatientRegistrationTest.patientRegistrationValidDataTest()'><b>patientRegistrationValidDataTest</b><br>Test class: com.triotree.test.website.FrontOffice.PatientRegistrationTest</td>
+<td></td>
+<td>603</td>
+<td>com.triotree.test.website.FrontOffice.PatientRegistrationTest@1b39fd82</td></tr>
+</table><p>
+</body>
+</html>

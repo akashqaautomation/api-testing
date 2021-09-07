@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.binmile.test.agent.Agent_list"/>
+      <class name="com.binmile.test.agent.Add_edit_delete_agent"/>
+       <class name="com.binmile.test.branch.Add_edit_delete_Branch"/>
+      <class name="com.binmile.test.branch.Branch_list"/>
+      <class name="com.binmile.test.department.Department_list"/>
+      <class name="com.binmile.test.department.Add_edit_delete_Department"/>
+      <class name="com.binmile.test.Designation.Designation_list"/>
+      <class name="com.binmile.test.Designation.Add_edit_delete_designation"/>
+       <class name="com.binmile.test.garage.Garage_list"/>
+      <class name="com.binmile.test.garage.View_add_edit_delete_garage"/>
+      <class name="com.binmile.test.garage.Export_import_garage"/>
+      <class name="com.binmile.test.hospital.Export_and_import_hospital"/>
+      <class name="com.binmile.test.hospital.Delete_hospital"/>
+      <class name="com.binmile.test.hospital.View_add_hospital"/>
+      <class name="com.binmile.test.hospital.Hospital_list"/>
+       <class name="com.binmile.test.insurance_type.Edit_insurance_type"/>
+      <class name="com.binmile.test.insurance_type.Insurance_type_list"/>
+      <class name="com.binmile.test.insurance_type.Add_insurance_type"/>
+      <class name="com.binmile.test.insurance_type.Delete_insurance"/>
+      <class name="com.binmile.test.InsuranceProvider.Add_insurance_provider"/>
+      <class name="com.binmile.test.InsuranceProvider.Delete_insurance_provider"/>
+      <class name="com.binmile.test.InsuranceProvider.InsuranceProviderList"/>
+      <class name="com.binmile.test.InsuranceProvider.Edit_insurance"/>
+      <class name="com.binmile.test.plan_type.Edit_plan_type"/>
+      <class name="com.binmile.test.plan_type.Add_plan_type"/>
+      <class name="com.binmile.test.plan_type.Delete_plan_type"/>
+      <class name="com.binmile.test.plan_type.Plan_type_list"/>
+       <class name="com.binmile.test.policy_management.Leads_list"/>
+      <class name="com.binmile.test.policy_management.Policy_list"/>
+      <class name="com.binmile.test.policy_management.Agent_policy_list"/>
+      <class name="com.binmile.test.product.Edit_Product"/>
+      <class name="com.binmile.test.product.Delete_product"/>
+      <class name="com.binmile.test.product.Product_list"/>
+      <class name="com.binmile.test.product.Add_commission"/>
+      <class name="com.binmile.test.product.Add_product"/>
+       <class name="com.binmile.test.region.Region_list"/>
+      <class name="com.binmile.test.region.Add_edit_delete_region"/>
+       <class name="com.binmile.test.role.Add_edit_delete_role"/>
+      <class name="com.binmile.test.role.Role_list"/>
+      <class name="com.binmile.test.role.Add_permission"/>
+       <class name="com.binmile.test.training_management.Add_edit_delete_content"/>
+      <class name="com.binmile.test.training_management.Add_topic"/>
+      <class name="com.binmile.test.training_management.Add_edit_delete_Training"/>
+      <class name="com.binmile.test.training_management.Traning_management_list"/>
+      <class name="com.binmile.test.training_management.Add_question"/>
+       <class name="com.binmile.test.usermanagement.Add_Edit_delete_user"/>
+      <class name="com.binmile.test.usermanagement.User_list"/>
+      <class name="com.binmile.test.usermanagement.VerifyExportuserlist"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,957 @@
+<html>
+<head>
+<title>TestNG:  Testbillingnew</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Testbillingnew</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/19/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 26 15:25:05 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>3579 seconds (3579016 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.triotree.website.Billing.IPPatientBillReportDateWiseTest.setUp()'><b>setUp</b><br>Test class: com.triotree.website.Billing.IPPatientBillReportDateWiseTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome=90.0.4430.212)
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;DESKTOP-U1OL4JI&apos;, ip: &apos;10.81.234.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Nishant\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55636}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 23ce9878b00854167ba6c6b432eec404
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:324)
+	at com.triotree.driver.website.TTWebsiteDriver.getURL(TTWebsiteDriver.java:153)
+	at com.triotree.test.website.TTWebsiteBaseTest.setUp(TTWebsiteBaseTest.java:65)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace876487258", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace876487258'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome=90.0.4430.212)
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;DESKTOP-U1OL4JI&apos;, ip: &apos;10.81.234.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Nishant\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55636}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 23ce9878b00854167ba6c6b432eec404
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:324)
+	at com.triotree.driver.website.TTWebsiteDriver.getURL(TTWebsiteDriver.java:153)
+	at com.triotree.test.website.TTWebsiteBaseTest.setUp(TTWebsiteBaseTest.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.website.Billing.IPPatientBillReportDateWiseTest@70eecdc2</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.triotree.website.Billing.CancelpendinginvestigationTest.beforeclass()'><b>beforeclass</b><br>Test class: com.triotree.website.Billing.CancelpendinginvestigationTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.CancelpendinginvestigationTest@c41709a</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.ModifyPriceManuallyThroughManualPriceModification.beforeclass()'><b>beforeclass</b><br>Test class: com.triotree.website.Billing.ModifyPriceManuallyThroughManualPriceModification</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.ModifyPriceManuallyThroughManualPriceModification@51684e4a</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.PatientStayTrackingTest.beforeclass()'><b>beforeclass</b><br>Test class: com.triotree.website.Billing.PatientStayTrackingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.PatientStayTrackingTest@ec2bf82</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.PrintInterimBillSummaryReportsTest.beforeclass()'><b>beforeclass</b><br>Test class: com.triotree.website.Billing.PrintInterimBillSummaryReportsTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.PrintInterimBillSummaryReportsTest@6ce1f601</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.CheckCreditCurrentInPatientAndAddRemarks.beforeclass()'><b>beforeclass</b><br>Test class: com.triotree.website.Billing.CheckCreditCurrentInPatientAndAddRemarks</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.CheckCreditCurrentInPatientAndAddRemarks@2a551a63</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.IPBillingPrintInterimBillDetailReportTest.beforeclass()'><b>beforeclass</b><br>Test class: com.triotree.website.Billing.IPBillingPrintInterimBillDetailReportTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.IPBillingPrintInterimBillDetailReportTest@20312893</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.PatientBillStatusTest.beforeclass()'><b>beforeclass</b><br>Test class: com.triotree.website.Billing.PatientBillStatusTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.PatientBillStatusTest@54ec8cc9</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.OrderGeneralOrderEntry.beforeclass()'><b>beforeclass</b><br>Test class: com.triotree.website.Billing.OrderGeneralOrderEntry</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.OrderGeneralOrderEntry@1a6f5124</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.AddDepositandRefundforIPPatientTest.beforeclass()'><b>beforeclass</b><br>Test class: com.triotree.website.Billing.AddDepositandRefundforIPPatientTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.AddDepositandRefundforIPPatientTest@38875e7d</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.SettleBillForIPPatientTest.beforeclass()'><b>beforeclass</b><br>Test class: com.triotree.website.Billing.SettleBillForIPPatientTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.SettleBillForIPPatientTest@1edb61b1</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.MakeGeneralBillForCash.beforeclass()'><b>beforeclass</b><br>Test class: com.triotree.website.Billing.MakeGeneralBillForCash</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.MakeGeneralBillForCash@cc62a3b</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.Makegeneralbillforcreditpatient.beforeclass()'><b>beforeclass</b><br>Test class: com.triotree.website.Billing.Makegeneralbillforcreditpatient</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.Makegeneralbillforcreditpatient@47747fb9</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.CancelBillGenerateandCancelDischargePatientTest.beforeclass()'><b>beforeclass</b><br>Test class: com.triotree.website.Billing.CancelBillGenerateandCancelDischargePatientTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.CancelBillGenerateandCancelDischargePatientTest@52eacb4b</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.AcknowledgeDischargeNotificationTest.beforeclass()'><b>beforeclass</b><br>Test class: com.triotree.website.Billing.AcknowledgeDischargeNotificationTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.AcknowledgeDischargeNotificationTest@1e886a5b</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.CancelpendinginvestigationTest.setUp()'><b>setUp</b><br>Test class: com.triotree.website.Billing.CancelpendinginvestigationTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.CancelpendinginvestigationTest@c41709a</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.ModifyPriceManuallyThroughManualPriceModification.setUp()'><b>setUp</b><br>Test class: com.triotree.website.Billing.ModifyPriceManuallyThroughManualPriceModification</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.ModifyPriceManuallyThroughManualPriceModification@51684e4a</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.PatientStayTrackingTest.setUp()'><b>setUp</b><br>Test class: com.triotree.website.Billing.PatientStayTrackingTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.PatientStayTrackingTest@ec2bf82</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.PrintInterimBillSummaryReportsTest.setUp()'><b>setUp</b><br>Test class: com.triotree.website.Billing.PrintInterimBillSummaryReportsTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.PrintInterimBillSummaryReportsTest@6ce1f601</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.CheckCreditCurrentInPatientAndAddRemarks.setUp()'><b>setUp</b><br>Test class: com.triotree.website.Billing.CheckCreditCurrentInPatientAndAddRemarks</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.CheckCreditCurrentInPatientAndAddRemarks@2a551a63</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.IPBillingPrintInterimBillDetailReportTest.setUp()'><b>setUp</b><br>Test class: com.triotree.website.Billing.IPBillingPrintInterimBillDetailReportTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.IPBillingPrintInterimBillDetailReportTest@20312893</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.PatientBillStatusTest.setUp()'><b>setUp</b><br>Test class: com.triotree.website.Billing.PatientBillStatusTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.PatientBillStatusTest@54ec8cc9</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.OrderGeneralOrderEntry.setUp()'><b>setUp</b><br>Test class: com.triotree.website.Billing.OrderGeneralOrderEntry</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.OrderGeneralOrderEntry@1a6f5124</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.AddDepositandRefundforIPPatientTest.setUp()'><b>setUp</b><br>Test class: com.triotree.website.Billing.AddDepositandRefundforIPPatientTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.AddDepositandRefundforIPPatientTest@38875e7d</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.SettleBillForIPPatientTest.setUp()'><b>setUp</b><br>Test class: com.triotree.website.Billing.SettleBillForIPPatientTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.SettleBillForIPPatientTest@1edb61b1</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.MakeGeneralBillForCash.setUp()'><b>setUp</b><br>Test class: com.triotree.website.Billing.MakeGeneralBillForCash</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.MakeGeneralBillForCash@cc62a3b</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.Makegeneralbillforcreditpatient.setUp()'><b>setUp</b><br>Test class: com.triotree.website.Billing.Makegeneralbillforcreditpatient</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.Makegeneralbillforcreditpatient@47747fb9</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.CancelBillGenerateandCancelDischargePatientTest.setUp()'><b>setUp</b><br>Test class: com.triotree.website.Billing.CancelBillGenerateandCancelDischargePatientTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.CancelBillGenerateandCancelDischargePatientTest@52eacb4b</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.AcknowledgeDischargeNotificationTest.setUp()'><b>setUp</b><br>Test class: com.triotree.website.Billing.AcknowledgeDischargeNotificationTest</td>
+<td></td>
+<td>0</td>
+<td>com.triotree.website.Billing.AcknowledgeDischargeNotificationTest@1e886a5b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.triotree.website.Billing.AcknowledgeDischargeNotificationTest.acknowledgeDischargeNotificationTest()'><b>acknowledgeDischargeNotificationTest</b><br>Test class: com.triotree.website.Billing.AcknowledgeDischargeNotificationTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace2058424956", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2058424956'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.website.Billing.AcknowledgeDischargeNotificationTest@1e886a5b</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.AddDepositandRefundforIPPatientTest.addDepositandRefundforIPPatientTest()'><b>addDepositandRefundforIPPatientTest</b><br>Test class: com.triotree.website.Billing.AddDepositandRefundforIPPatientTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace247309715", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace247309715'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.website.Billing.AddDepositandRefundforIPPatientTest@38875e7d</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.CancelBillGenerateandCancelDischargePatientTest.cancelBillGenerateandCancelDischargePatientTest()'><b>cancelBillGenerateandCancelDischargePatientTest</b><br>Test class: com.triotree.website.Billing.CancelBillGenerateandCancelDischargePatientTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1706027885", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1706027885'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.website.Billing.CancelBillGenerateandCancelDischargePatientTest@52eacb4b</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.CancelpendinginvestigationTest.cancelpendinginvestigation()'><b>cancelpendinginvestigation</b><br>Test class: com.triotree.website.Billing.CancelpendinginvestigationTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:73)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1622066826", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1622066826'><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:73)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1887)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:778)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.website.Billing.CancelpendinginvestigationTest@c41709a</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.ChangeofBedCategoryReportTest.changeofBedCategoryReportTest()'><b>changeofBedCategoryReportTest</b><br>Test class: com.triotree.website.Billing.ChangeofBedCategoryReportTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate element with text: L1-SANITY-T3
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;DESKTOP-U1OL4JI&apos;, ip: &apos;10.81.234.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: driver.version: TTWebsiteDriver
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+	at com.triotree.driver.website.TTWebsiteDriver.selectByvisibletext(TTWebsiteDriver.java:721)
+	at com.triotree.driver.website.TTWebsiteDriver.selectclass(TTWebsiteDriver.java:732)
+	at com.triotree.website.pages.Billing.CancelIPInvestigationReportPage.selectFacility(CancelIPInvestigationReportPage.java:105)
+	at com.triotree.website.Billing.ChangeofBedCategoryReportTest.changeofBedCategoryReportTest(ChangeofBedCategoryReportTest.java:39)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace281312377", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace281312377'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate element with text: L1-SANITY-T3
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;DESKTOP-U1OL4JI&apos;, ip: &apos;10.81.234.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: driver.version: TTWebsiteDriver
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+	at com.triotree.driver.website.TTWebsiteDriver.selectByvisibletext(TTWebsiteDriver.java:721)
+	at com.triotree.driver.website.TTWebsiteDriver.selectclass(TTWebsiteDriver.java:732)
+	at com.triotree.website.pages.Billing.CancelIPInvestigationReportPage.selectFacility(CancelIPInvestigationReportPage.java:105)
+	at com.triotree.website.Billing.ChangeofBedCategoryReportTest.changeofBedCategoryReportTest(ChangeofBedCategoryReportTest.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>120</td>
+<td>com.triotree.website.Billing.ChangeofBedCategoryReportTest@6e33c391</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.CheckCreditCurrentInPatientAndAddRemarks.checkCreditCurrentInPatientAndAddRemarks()'><b>checkCreditCurrentInPatientAndAddRemarks</b><br>Test class: com.triotree.website.Billing.CheckCreditCurrentInPatientAndAddRemarks</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1040537707", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1040537707'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.website.Billing.CheckCreditCurrentInPatientAndAddRemarks@2a551a63</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.CreditLimitTest.creditLimitTest()'><b>creditLimitTest</b><br>Test class: com.triotree.website.Billing.CreditLimitTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[text()=&apos;New Credit Limit&apos;]/..//textarea[@id=&apos;txtnewcl&apos;]&quot;}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;DESKTOP-U1OL4JI&apos;, ip: &apos;10.81.234.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Nishant\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53192}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e7294e300738e16b04304106adea2f6f
+*** Element info: {Using=xpath, value=//label[text()=&apos;New Credit Limit&apos;]/..//textarea[@id=&apos;txtnewcl&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.triotree.driver.website.TTWebsiteDriver.enterInputData(TTWebsiteDriver.java:755)
+	at com.triotree.website.pages.Billing.CreditLimitPage.enterCreditLimit(CreditLimitPage.java:94)
+	at com.triotree.website.Billing.CreditLimitTest.creditLimitTest(CreditLimitTest.java:51)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace639482242", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace639482242'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[text()=&apos;New Credit Limit&apos;]/..//textarea[@id=&apos;txtnewcl&apos;]&quot;}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;DESKTOP-U1OL4JI&apos;, ip: &apos;10.81.234.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Nishant\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53192}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e7294e300738e16b04304106adea2f6f
+*** Element info: {Using=xpath, value=//label[text()=&apos;New Credit Limit&apos;]/..//textarea[@id=&apos;txtnewcl&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.triotree.driver.website.TTWebsiteDriver.enterInputData(TTWebsiteDriver.java:755)
+	at com.triotree.website.pages.Billing.CreditLimitPage.enterCreditLimit(CreditLimitPage.java:94)
+	at com.triotree.website.Billing.CreditLimitTest.creditLimitTest(CreditLimitTest.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>110</td>
+<td>com.triotree.website.Billing.CreditLimitTest@4e9658b5</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.IPBillingPrintInterimBillDetailReportTest.iPBillingPrintInterimBillDetailReportTest()'><b>iPBillingPrintInterimBillDetailReportTest</b><br>Test class: com.triotree.website.Billing.IPBillingPrintInterimBillDetailReportTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace497333241", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace497333241'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.website.Billing.IPBillingPrintInterimBillDetailReportTest@20312893</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.IPBillingTest.iPBillingTest()'><b>iPBillingTest</b><br>Test class: com.triotree.website.Billing.IPBillingTest</td>
+<td><div><pre>org.openqa.selenium.ScriptTimeoutException: script timeout
+  (Session info: chrome=90.0.4430.212)
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;DESKTOP-U1OL4JI&apos;, ip: &apos;10.81.234.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Nishant\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55237}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b431ae3d6d4583a2c6446ed4f4412251
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:536)
+	at com.triotree.driver.website.TTWebsiteDriver.clickByJS(TTWebsiteDriver.java:327)
+	at com.triotree.website.pages.Billing.IPBillingPage.clickonModelPrintIcon(IPBillingPage.java:117)
+	at com.triotree.website.Billing.IPBillingTest.iPBillingTest(IPBillingTest.java:49)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2037343019", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2037343019'><pre>org.openqa.selenium.ScriptTimeoutException: script timeout
+  (Session info: chrome=90.0.4430.212)
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;DESKTOP-U1OL4JI&apos;, ip: &apos;10.81.234.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Nishant\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55237}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b431ae3d6d4583a2c6446ed4f4412251
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:536)
+	at com.triotree.driver.website.TTWebsiteDriver.clickByJS(TTWebsiteDriver.java:327)
+	at com.triotree.website.pages.Billing.IPBillingPage.clickonModelPrintIcon(IPBillingPage.java:117)
+	at com.triotree.website.Billing.IPBillingTest.iPBillingTest(IPBillingTest.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>492</td>
+<td>com.triotree.website.Billing.IPBillingTest@3113a37</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.IPPatientBillReportDateWiseTest.iPPatientBillReportDateWiseTest()'><b>iPPatientBillReportDateWiseTest</b><br>Test class: com.triotree.website.Billing.IPPatientBillReportDateWiseTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:73)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace886510498", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace886510498'><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:73)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1887)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:778)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>57</td>
+<td>com.triotree.website.Billing.IPPatientBillReportDateWiseTest@70eecdc2</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.MakeGeneralBillForCash.makegeneralbillforcash()'><b>makegeneralbillforcash</b><br>Test class: com.triotree.website.Billing.MakeGeneralBillForCash</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1719746158", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1719746158'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.website.Billing.MakeGeneralBillForCash@cc62a3b</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.Makegeneralbillforcreditpatient.makegeneralbillforcreditpatient()'><b>makegeneralbillforcreditpatient</b><br>Test class: com.triotree.website.Billing.Makegeneralbillforcreditpatient</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace823056052", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace823056052'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.website.Billing.Makegeneralbillforcreditpatient@47747fb9</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.ModifyPriceManuallyThroughManualPriceModification.modifyPriceManuallyThroughManualPriceModification()'><b>modifyPriceManuallyThroughManualPriceModification</b><br>Test class: com.triotree.website.Billing.ModifyPriceManuallyThroughManualPriceModification</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:73)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace400216879", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace400216879'><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:73)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1887)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:778)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.website.Billing.ModifyPriceManuallyThroughManualPriceModification@51684e4a</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.OrderGeneralOrderEntry.orderGeneralOrderEntry()'><b>orderGeneralOrderEntry</b><br>Test class: com.triotree.website.Billing.OrderGeneralOrderEntry</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace40910225", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace40910225'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.website.Billing.OrderGeneralOrderEntry@1a6f5124</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.PatientBillStatusTest.patientBillStatusTest()'><b>patientBillStatusTest</b><br>Test class: com.triotree.website.Billing.PatientBillStatusTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1189187821", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1189187821'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.website.Billing.PatientBillStatusTest@54ec8cc9</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.PatientStayTrackingTest.patientStayTrackingTest()'><b>patientStayTrackingTest</b><br>Test class: com.triotree.website.Billing.PatientStayTrackingTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:73)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2083004088", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2083004088'><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:73)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1887)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:778)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.website.Billing.PatientStayTrackingTest@ec2bf82</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.PrintInterimBillSummaryReportsTest.printInterimBillSummaryReportsTest()'><b>printInterimBillSummaryReportsTest</b><br>Test class: com.triotree.website.Billing.PrintInterimBillSummaryReportsTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:73)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1250950517", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1250950517'><pre>java.lang.NullPointerException
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1130)
+	at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+	at com.aventstack.extentreports.model.ExceptionInfo.&lt;init&gt;(ExceptionInfo.java:19)
+	at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:405)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:947)
+	at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:959)
+	at com.triotree.test.base.ResultListener.onTestSkipped(ResultListener.java:73)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1887)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:778)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.website.Billing.PrintInterimBillSummaryReportsTest@6ce1f601</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.SettleBillForIPPatientTest.settleBillForIPPatientTest()'><b>settleBillForIPPatientTest</b><br>Test class: com.triotree.website.Billing.SettleBillForIPPatientTest</td>
+<td><div><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace926188689", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace926188689'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.triotree.website.Billing.SettleBillForIPPatientTest@1edb61b1</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.UnBilledUnsettledBillReportTest.unBilledUnsettledBillReportTest()'><b>unBilledUnsettledBillReportTest</b><br>Test class: com.triotree.website.Billing.UnBilledUnsettledBillReportTest</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;DESKTOP-U1OL4JI&apos;, ip: &apos;10.81.234.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Nishant\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53758}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9fa82027eed6403c978d3720238f307e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
+	at com.triotree.website.pages.Billing.UnBilledUnsettledBillReportPage.clickonPatientBillStatusExcelViewButton(UnBilledUnsettledBillReportPage.java:88)
+	at com.triotree.website.Billing.UnBilledUnsettledBillReportTest.unBilledUnsettledBillReportTest(UnBilledUnsettledBillReportTest.java:45)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace937860163", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace937860163'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;DESKTOP-U1OL4JI&apos;, ip: &apos;10.81.234.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Nishant\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53758}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9fa82027eed6403c978d3720238f307e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
+	at com.triotree.website.pages.Billing.UnBilledUnsettledBillReportPage.clickonPatientBillStatusExcelViewButton(UnBilledUnsettledBillReportPage.java:88)
+	at com.triotree.website.Billing.UnBilledUnsettledBillReportTest.unBilledUnsettledBillReportTest(UnBilledUnsettledBillReportTest.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>100</td>
+<td>com.triotree.website.Billing.UnBilledUnsettledBillReportTest@7544a1e4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.triotree.website.Billing.CancelIPInvestigationReportTest.cancelIPInvestigationReportTest()'><b>cancelIPInvestigationReportTest</b><br>Test class: com.triotree.website.Billing.CancelIPInvestigationReportTest</td>
+<td></td>
+<td>158</td>
+<td>com.triotree.website.Billing.CancelIPInvestigationReportTest@2a7b6f69</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.ChangeBillableBedFromTransferTrackingAndBillableBedForSurgery.changeBillableBedFromTransferTrackingAndBillableBedForSurgery()'><b>changeBillableBedFromTransferTrackingAndBillableBedForSurgery</b><br>Test class: com.triotree.website.Billing.ChangeBillableBedFromTransferTrackingAndBillableBedForSurgery</td>
+<td></td>
+<td>84</td>
+<td>com.triotree.website.Billing.ChangeBillableBedFromTransferTrackingAndBillableBedForSurgery@5528a42c</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.CheckSurgeryBreakupReportIfSurgeryDoneTest.checkSurgeryBreakupReportIfSurgeryDoneTest()'><b>checkSurgeryBreakupReportIfSurgeryDoneTest</b><br>Test class: com.triotree.website.Billing.CheckSurgeryBreakupReportIfSurgeryDoneTest</td>
+<td></td>
+<td>365</td>
+<td>com.triotree.website.Billing.CheckSurgeryBreakupReportIfSurgeryDoneTest@d816dde</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.ReportCommonScroll.commonscrollreport()'><b>commonscrollreport</b><br>Test class: com.triotree.website.Billing.ReportCommonScroll</td>
+<td></td>
+<td>93</td>
+<td>com.triotree.website.Billing.ReportCommonScroll@372b0d86</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.ComparativeBillReportTest.comparativeBillReportTest()'><b>comparativeBillReportTest</b><br>Test class: com.triotree.website.Billing.ComparativeBillReportTest</td>
+<td></td>
+<td>189</td>
+<td>com.triotree.website.Billing.ComparativeBillReportTest@65f87a2c</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.EstimationComparisonReportTest.estimationComparisonReportTest()'><b>estimationComparisonReportTest</b><br>Test class: com.triotree.website.Billing.EstimationComparisonReportTest</td>
+<td></td>
+<td>107</td>
+<td>com.triotree.website.Billing.EstimationComparisonReportTest@7db0565c</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.IPBillingDetailedBillForCompanyOnlyTest.iPBillingDetailedBillForCompanyOnlyTest()'><b>iPBillingDetailedBillForCompanyOnlyTest</b><br>Test class: com.triotree.website.Billing.IPBillingDetailedBillForCompanyOnlyTest</td>
+<td></td>
+<td>190</td>
+<td>com.triotree.website.Billing.IPBillingDetailedBillForCompanyOnlyTest@6c451c9c</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.MiscChargesTest.miscchargesTest()'><b>miscchargesTest</b><br>Test class: com.triotree.website.Billing.MiscChargesTest</td>
+<td></td>
+<td>181</td>
+<td>com.triotree.website.Billing.MiscChargesTest@210386e0</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.OTFinancialClearenceTest.oTFinancialClearenceTest()'><b>oTFinancialClearenceTest</b><br>Test class: com.triotree.website.Billing.OTFinancialClearenceTest</td>
+<td></td>
+<td>234</td>
+<td>com.triotree.website.Billing.OTFinancialClearenceTest@3d4d3fe7</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.PrintCompanyonlyBillTest.printCompanyonlyBillTest()'><b>printCompanyonlyBillTest</b><br>Test class: com.triotree.website.Billing.PrintCompanyonlyBillTest</td>
+<td></td>
+<td>211</td>
+<td>com.triotree.website.Billing.PrintCompanyonlyBillTest@213e3629</td></tr>
+<tr>
+<td title='com.triotree.website.Billing.PrintPatientOnlyBillTest.printPatientOnlyBillTest()'><b>printPatientOnlyBillTest</b><br>Test class: com.triotree.website.Billing.PrintPatientOnlyBillTest</td>
+<td></td>
+<td>190</td>
+<td>com.triotree.website.Billing.PrintPatientOnlyBillTest@31c269fd</td></tr>
+</table><p>
+</body>
+</html>

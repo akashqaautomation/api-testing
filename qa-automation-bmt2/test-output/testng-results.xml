@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-09-02T09:29:28Z" name="Default suite" finished-at="2021-09-02T09:29:38Z" duration-ms="9878">
+    <groups>
+    </groups>
+    <test started-at="2021-09-02T09:29:28Z" name="Default test" finished-at="2021-09-02T09:29:38Z" duration-ms="9878">
+      <class name="com.binmile.test.login_test.KYC_Login">
+        <test-method is-config="true" signature="beforeSuite(java.lang.String)[pri:0, instance:com.binmile.test.login_test.KYC_Login@7d2a6eac]" started-at="2021-09-02T14:59:28Z" name="beforeSuite" finished-at="2021-09-02T14:59:28Z" duration-ms="188" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeclass()[pri:0, instance:com.binmile.test.login_test.KYC_Login@7d2a6eac]" started-at="2021-09-02T14:59:28Z" name="beforeclass" finished-at="2021-09-02T14:59:28Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.binmile.test.login_test.KYC_Login@7d2a6eac]" started-at="2021-09-02T14:59:28Z" name="setUp" finished-at="2021-09-02T14:59:38Z" duration-ms="9791" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Login_test()[pri:0, instance:com.binmile.test.login_test.KYC_Login@7d2a6eac]" started-at="2021-09-02T14:59:38Z" name="Login_test" finished-at="2021-09-02T14:59:38Z" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_test -->
+        <test-method is-config="true" signature="tearDownSession()[pri:0, instance:com.binmile.test.login_test.KYC_Login@7d2a6eac]" started-at="2021-09-02T14:59:38Z" name="tearDownSession" finished-at="2021-09-02T14:59:38Z" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSession -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.binmile.test.login_test.KYC_Login@7d2a6eac]" started-at="2021-09-02T14:59:38Z" name="afterSuite" finished-at="2021-09-02T14:59:38Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.binmile.test.login_test.KYC_Login -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

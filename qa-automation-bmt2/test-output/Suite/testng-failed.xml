@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="com.binmile.test.InsuranceProvider.InsuranceProviderList">
+        <methods>
+          <include name="insurance_list"/>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.InsuranceProvider.InsuranceProviderList -->
+      <class name="com.binmile.test.insurance_type.Insurance_type_list">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.binmile.test.insurance_type.Insurance_type_list -->
+      <class name="com.binmile.test.region.Region_list">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.region.Region_list -->
+      <class name="com.binmile.test.plan_type.Edit_plan_type">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.plan_type.Edit_plan_type -->
+      <class name="com.binmile.test.role.Add_edit_delete_role">
+        <methods>
+          <include name="edit_role"/>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="deleteRoll"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.role.Add_edit_delete_role -->
+      <class name="com.binmile.test.training_management.Add_topic">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.training_management.Add_topic -->
+      <class name="com.binmile.test.insurance_type.Edit_insurance_type">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.insurance_type.Edit_insurance_type -->
+      <class name="com.binmile.test.agent.Add_edit_delete_agent">
+        <methods>
+          <include name="delete_agent"/>
+          <include name="add_agent"/>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+          <include name="edit_agent"/>
+        </methods>
+      </class> <!-- com.binmile.test.agent.Add_edit_delete_agent -->
+      <class name="com.binmile.test.Designation.Designation_list">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.Designation.Designation_list -->
+      <class name="com.binmile.test.department.Add_edit_delete_Department">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="delete_department"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+          <include name="edit_department"/>
+        </methods>
+      </class> <!-- com.binmile.test.department.Add_edit_delete_Department -->
+      <class name="com.binmile.test.garage.View_add_edit_delete_garage">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+          <include name="add_garage"/>
+        </methods>
+      </class> <!-- com.binmile.test.garage.View_add_edit_delete_garage -->
+      <class name="com.binmile.test.garage.Garage_list">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.garage.Garage_list -->
+      <class name="com.binmile.test.training_management.Add_question">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.training_management.Add_question -->
+      <class name="com.binmile.test.branch.Add_edit_delete_Branch">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+          <include name="delete_branch"/>
+          <include name="edit_branch"/>
+        </methods>
+      </class> <!-- com.binmile.test.branch.Add_edit_delete_Branch -->
+      <class name="com.binmile.test.product.Add_commission">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.product.Add_commission -->
+      <class name="com.binmile.test.InsuranceProvider.Add_insurance_provider">
+        <methods>
+          <include name="add_insurance_provider"/>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.InsuranceProvider.Add_insurance_provider -->
+      <class name="com.binmile.test.InsuranceProvider.Delete_insurance_provider">
+        <methods>
+          <include name="delete_insurance"/>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.InsuranceProvider.Delete_insurance_provider -->
+      <class name="com.binmile.test.department.Department_list">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.department.Department_list -->
+      <class name="com.binmile.test.region.Add_edit_delete_region">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+          <include name="delete_region"/>
+        </methods>
+      </class> <!-- com.binmile.test.region.Add_edit_delete_region -->
+      <class name="com.binmile.test.hospital.Export_and_import_hospital">
+        <methods>
+          <include name="import_test"/>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.hospital.Export_and_import_hospital -->
+      <class name="com.binmile.test.training_management.Add_edit_delete_Training">
+        <methods>
+          <include name="add_training"/>
+          <include name="edit_training"/>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+          <include name="delete_training"/>
+        </methods>
+      </class> <!-- com.binmile.test.training_management.Add_edit_delete_Training -->
+      <class name="com.binmile.test.role.Role_list">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.role.Role_list -->
+      <class name="com.binmile.test.insurance_type.Delete_insurance">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.insurance_type.Delete_insurance -->
+      <class name="com.binmile.test.insurance_type.Add_insurance_type">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.insurance_type.Add_insurance_type -->
+      <class name="com.binmile.test.InsuranceProvider.Edit_insurance">
+        <methods>
+          <include name="edit_insurance"/>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.InsuranceProvider.Edit_insurance -->
+      <class name="com.binmile.test.product.Delete_product">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.product.Delete_product -->
+      <class name="com.binmile.test.plan_type.Delete_plan_type">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.plan_type.Delete_plan_type -->
+      <class name="com.binmile.test.policy_management.Agent_policy_list">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.policy_management.Agent_policy_list -->
+      <class name="com.binmile.test.usermanagement.Add_Edit_delete_user">
+        <methods>
+          <include name="edit_user"/>
+          <include name="tearDownSession"/>
+          <include name="add_user"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+          <include name="deleteuser"/>
+        </methods>
+      </class> <!-- com.binmile.test.usermanagement.Add_Edit_delete_user -->
+      <class name="com.binmile.test.hospital.Hospital_list">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.hospital.Hospital_list -->
+      <class name="com.binmile.test.product.Edit_Product">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.product.Edit_Product -->
+      <class name="com.binmile.test.plan_type.Plan_type_list">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.plan_type.Plan_type_list -->
+      <class name="com.binmile.test.product.Product_list">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.product.Product_list -->
+      <class name="com.binmile.test.usermanagement.VerifyExportuserlist">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.usermanagement.VerifyExportuserlist -->
+      <class name="com.binmile.test.garage.Export_import_garage">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+          <include name="import_test"/>
+        </methods>
+      </class> <!-- com.binmile.test.garage.Export_import_garage -->
+      <class name="com.binmile.test.Designation.Add_edit_delete_designation">
+        <methods>
+          <include name="delete_designation"/>
+          <include name="edit_designation"/>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.Designation.Add_edit_delete_designation -->
+      <class name="com.binmile.test.plan_type.Add_plan_type">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.plan_type.Add_plan_type -->
+      <class name="com.binmile.test.product.Add_product">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.product.Add_product -->
+      <class name="com.binmile.test.training_management.Traning_management_list">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.training_management.Traning_management_list -->
+      <class name="com.binmile.test.hospital.Delete_hospital">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.hospital.Delete_hospital -->
+      <class name="com.binmile.test.branch.Branch_list">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.branch.Branch_list -->
+      <class name="com.binmile.test.policy_management.Policy_list">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.policy_management.Policy_list -->
+      <class name="com.binmile.test.role.Add_permission">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.role.Add_permission -->
+      <class name="com.binmile.test.agent.Agent_list">
+        <methods>
+          <include name="agent_listing_test"/>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.agent.Agent_list -->
+      <class name="com.binmile.test.policy_management.Leads_list">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.policy_management.Leads_list -->
+      <class name="com.binmile.test.training_management.Add_edit_delete_content">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+          <include name="add_training_content"/>
+        </methods>
+      </class> <!-- com.binmile.test.training_management.Add_edit_delete_content -->
+      <class name="com.binmile.test.usermanagement.User_list">
+        <methods>
+          <include name="tearDownSession"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.binmile.test.usermanagement.User_list -->
+      <class name="com.binmile.test.hospital.View_add_hospital">
+        <methods>
+          <include name="delete_hospital"/>
+          <include name="tearDownSession"/>
+          <include name="add_hospital"/>
+          <include name="beforeclass"/>
+          <include name="setUp"/>
+          <include name="edit_hospital"/>
+        </methods>
+      </class> <!-- com.binmile.test.hospital.View_add_hospital -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
