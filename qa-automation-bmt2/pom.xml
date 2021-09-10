@@ -27,7 +27,7 @@
 				<version>2.19.1</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>ADTtestng.xml</suiteXmlFile>
+						<suiteXmlFile>testng1.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<systemPropertyVariables>
 						<browserName>chrome</browserName>
